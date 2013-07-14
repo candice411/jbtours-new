@@ -1,0 +1,466 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background: url(images/body_bg.jpg) repeat;
+	/*text-align: center; /* for IE */
+}
+div.clearer {clear:both; line-height: 0; height: 0;}
+
+.blue { color: #365F91; font-weight: bold; }
+
+#mainContent {
+	padding: 0 10px;
+}
+/* -START MENU- */
+#menu{
+width: 768px;
+font-size: 80%;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#menu:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both;
+visibility: hidden;
+}
+
+#menu ul{
+
+width: 100%;
+background: url(menu/center.gif) center center repeat-x;
+padding: 14px 0 15px 0;
+margin: 0;
+text-align: center; /*set value to "right" for example to align menu to the left of page*/
+}
+
+#menu ul li{
+display: inline;
+padding:6px 0 6px 0;
+}
+
+#menu ul li a{
+color: #fff2cd;
+padding: 15px;
+margin: 0;
+text-decoration: none;
+
+}
+
+#menu ul li a:hover{
+background: url(menu/center2.gif) center center repeat-x;
+padding: 14px 15px 15px 15px;
+color:#9d802e;
+}
+/* -END MENU- */
+
+/* -START CONTENT- */
+
+#container {
+	padding:5px 10px 5px 10px;
+	background:#fff2cd;
+	text-align: left;
+}
+
+#heading-center {
+	background:url(images/heading-center.gif) repeat-x;
+	color:#fff2cd;
+	font-size:16pt;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	padding:20px 0 0 0;
+}
+ul.ratesdates {
+	list-style-image:url(images/arrow.gif);
+}
+.price {
+
+	background:#999999;
+	border:thin #000 solid;
+	padding:5px 5px 5px 5px;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+	width:150px;
+	text-align:center;
+}
+.dates {
+
+	background:#999999;
+	border:thin #000 solid;
+	padding:5px 5px 5px 5px;
+	width:150px;
+	font-size:12px;
+	text-align:center;
+}
+.bubble {
+	height: 48px;
+}
+.border {
+	border:thin #000 solid;
+	padding:5px 5px 5px 5px;
+}
+/* -END CONTENT- */
+
+/* -START STYLES- */
+h3 {font-size:2em;}
+.maintext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #321d03;
+}
+.heading1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #915508;
+}
+.browntext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #915508;
+}
+.lightbrown {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #fff2cd;
+}
+.linkmain1:link	{
+	color: #915508;
+	text-decoration: underline;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+.linkmain1:visited	{
+	color: #915508;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+
+}
+.linkmain1:hover	{
+	color:  #321d03;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;	
+	
+}
+
+.linkmain2:link	{
+	color: #321d03;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.linkmain2:visited	{
+	color: #321d03;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+
+}
+.linkmain2:hover	{
+	color: #915508;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+
+}
+.dark-back {background:#321d03;color:#fff2cd;}
+.style1 {color: #990000;}
+.style2 {color:#AD9E6B;}
+.style3 {color:#909;}
+/* -END STYLES- */
+
+/* Rate & Dates */
+#rates-dates {font-size:.8em;padding:5px 5px 5px 5px;font-family:Arial, Helvetica, sans-serif;}
+#rates_cell1 {float:left; padding:5px; width:15%;text-align:left;}
+#rates_cell2 {float:left; padding:5px; width:10%;text-align:left;}
+#rates_cell3 {float:left; padding:5px; width:35%;text-align:left;}
+#rates_cell4 {float:left; padding:5px; width:25%;text-align:left;}
+#rates_cell5 {float:left; padding:5px; width:5%;text-align:left;}
+.row-hover {width:100%;border:1px #333 solid;}
+.row {width:100%;border:1px #333 solid;color:#321d03;}
+a {color:#915508; text-decoration:none;}
+#row_head {float:left; width:100%;border:2px #333 solid;font-weight:bold;}
+div:hover.row-hover {background:#e4cd81;}
+.line { text-decoration: line-through; }
+/* END*/
+
+iframe#bookingbg {background-color:#fff2cd;}
+
+/*** BLUE TRAIN **/
+.header-img {
+	margin: 0 auto;
+	background: url(images/packages/blue-train/header.jpg) no-repeat center;
+	width: 727px;
+	height: 173px;
+	position:relative;
+	z-index: 5px;
+}
+.header-cont {
+	padding-top: 55px;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+.cloud {
+	background: url('images/packages/blue-train/bubble.gif') no-repeat;
+	width: 244px;
+	height: 160px;
+	z-index: 10px;
+	position: absolute;
+	left: 460px;
+	top: 90px;
+}
+.cloud2 {
+	background: url('images/packages/blue-train/bubble2.gif') no-repeat;
+	width: 356px;
+	height: 111px;
+	padding-top: 5px;
+	position: relative;
+	float: right;
+}
+td.title-lft {
+	background: url(images/packages/title-left.jpg) no-repeat;
+	width: 7px;
+	height: 40px;
+}
+td.title-ctr {
+	background: url(images/packages/title-ctr.jpg) no-repeat;
+	width: 100%;
+	height: 40px;
+}
+td.title-rgt {
+	background: url(images/packages/title-right.jpg) no-repeat;
+	width: 10px;
+	height: 40px;
+}
+
+/* Speech Bubbles
+------------------------------------------ */
+
+#icon1 .point {
+    border-left-color: #FFCC33;
+}
+
+.spch-bub-outside {
+		float: left;
+}
+
+.spch-bub-inside .point, .spch-bub-outside .point {
+    border-bottom: 27px solid transparent;
+    border-left: 25px solid #938953;
+    display: block;
+    height: 0;
+    left: 30px;
+    overflow: hidden;
+    position: relative;
+    top: 220px;
+	*top: 230px;
+    width: 0;
+}
+
+.spch-bub-inside .point, .spch-bub-outside .point2 {
+    border-bottom: 27px solid transparent;
+    border-left: 25px solid #938953;
+    display: block;
+    height: 0;
+    left: 30px;
+    overflow: hidden;
+    position: relative;
+    top: 220px;
+	*top: 230px;
+    width: 0;
+}
+
+.spch-bub-inside .point, .spch-bub-outside .point3 {
+    border-bottom: 27px solid transparent;
+    border-left: 25px solid #938953;
+    display: block;
+    height: 0;
+    left: 30px;
+    overflow: hidden;
+    position: relative;
+    top: 365px;
+	*top: 680px;
+    width: 0;
+}
+
+#icon1 .bubble {
+    background-color: #FFCC33;
+}
+
+.spch-bub-outside .bubble {
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url(http://www.jbtours.co.za/upmarket/PIE.htc);
+    background: none repeat scroll 0 0 #938953;
+    display: block;
+    height: 168px;
+	*height: 178px;
+    left: 0;
+    margin: 0 10px 32px 0;
+    padding: 15px;
+    position: relative;
+    top: 0;
+    width: 200px;
+	float:left;
+}
+
+.spch-bub-outside .bubble2 {
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url(http://www.jbtours.co.za/upmarket/PIE.htc);
+    background: none repeat scroll 0 0 #938953;
+    display: block;
+    height: 168px;
+	*height: 178px;
+    left: 0;
+    margin: 0 10px 32px 0;
+    padding: 15px;
+    position: relative;
+    top: 0;
+    width: 199px;
+	float: left;
+}
+
+.spch-bub-outside .bubble3 {
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url(http://www.jbtours.co.za/upmarket/PIE.htc);
+    background: none repeat scroll 0 0 #938953;
+    display: block;
+    height: 315px;
+	*height: 330px;
+    left: 0;
+    margin: 0 10px 32px 0;
+    padding: 15px;
+    position: relative;
+    top: 0;
+    width: 230px;
+	float: left;
+}
+
+/* Rates Dates 2012 */
+
+.rd_nav {
+	margin: 10px 0;
+}
+
+.holiday, .sport, .rugby, .festival, .other {
+	background:#C00;
+	padding: 10px;
+	float: left;
+	margin-right: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.holiday a, .sport a, .rugby a, .festival a, .other a {
+	color:#CCC;
+}
+
+	.holiday a:hover, .sport a:hover, .rugby a:hover, .festival a:hover, .other a:hover {
+		color:#999;
+	}
+
+.rd td {
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: 1px solid #D6D6D6;
+}
+
+table.rd {
+	border-left: 1px solid #CCC;
+	width: 749px;
+}
+
+.rd tr:hover { 
+	background: #b9d7f2;
+	color: #000;
+}
+
+.rd tr.upmarket:hover { 
+	background:#e9bafd;
+	color: #000;
+}
+
+.rd td { 
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-right: 1px solid #D6D6D6;
+	border-bottom: 1px solid #D6D6D6;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.rd th {
+	background: #06C;
+	padding: 5px;
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	text-align: center;
+}
+
+.rd th.upmarket {
+	background: #800080;
+}
+
+.date {
+	width: 180px;
+}
+
+.tour_no {
+	width: 100px;
+}
+
+.description {
+	width: 275px;
+}
+
+.transport {
+	width: 215px;
+}
+
+.prices {
+	width: 80px;
+}
+
+span {
+	font-weight: bold;
+}
+
+.red {
+	color: #F00;
+}
+
+.blue {
+	color: #00F;
+}
+
+.purple {
+	color: #800080;
+}
+
+.green {
+	color: #008000;
+}
+
+.small_text {
+	font-size: 12px;
+	text-transform: none;
+	font-weight: normal;
+}

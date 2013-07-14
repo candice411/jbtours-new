@@ -1,0 +1,28 @@
+To update from 1.0.8 to 1.0.9
+
+----
+Then, make edits in root/index.php  specified in modx file.
+----
+Then, remove all old files and copy included files instead of older ones
+	* from="root/includes/functions_attached_images.php" to="includes/functions_attached_images.php
+	* from="root/includes/acp/acp_attached_images.php" to="includes/acp/acp_attached_images.php
+	* from="root/includes/acp/acp_random_images.php" to="includes/acp/acp_random_images.php
+	* from="root/includes/acp/info/acp_attached_images.php" to="includes/acp/info/acp_attached_images.php
+	* from="root/includes/acp/info/acp_random_images.php" to="includes/acp/info/acp_random_images.php
+	* from="root/adm/style/acp_attached_images.html" to="adm/style/acp_attached_images.html
+	* from="root/adm/style/acp_random_images.html" to="adm/style/acp_random_images.html
+	* from="root/language/en/mods/info_acp_attached_images.php" to="language/en/mods/info_acp_attached_images.php
+	* from="root/language/en/mods/attached_images.php" to="language/en/mods/attached_images.php
+	* from="root/language/en/mods/umil_attached_images.php" to="language/en/mods/umil_attached_images.php
+	* from="root/styles/prosilver/template/attached_images.html" to="styles/prosilver/template/attached_images.html
+	* from="root/styles/prosilver/template/random_images.html" to="styles/prosilver/template/random_images.html
+	* from="root/install_attached_images.php" to="install_attached_images.php
+
+	----	
+Then run update script
+
+root/update_attached_images.php
+-----
+,
+
+

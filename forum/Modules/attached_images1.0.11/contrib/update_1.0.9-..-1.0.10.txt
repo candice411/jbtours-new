@@ -1,0 +1,17 @@
+To update from 1.0.9 to 1.0.10
+
+----
+Then, remove old files below and copy included files instead of older ones
+	* from="root/includes/functions_attached_images.php" to="includes/functions_attached_images.php
+	* from="root/includes/acp/info/acp_attached_images.php" to="includes/acp/info/acp_attached_images.php
+	* from="root/includes/acp/info/acp_random_images.php" to="includes/acp/info/acp_random_images.php
+	* from="root/install_attached_images.php" to="install_attached_images.php
+
+	----	
+Then run update script
+
+root/update_attached_images.php
+-----
+,
+
+

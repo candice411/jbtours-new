@@ -1,0 +1,38 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_RANDOM_IMAGES_BLOCK_CONFIG}</h1>
+<form id="acp_board" method="post" action="{U_ACTION}">
+	<fieldset>
+		<dl>
+			<dt><label for="random_images_block_enable">{L_RANDOM_IMAGES_BLOCK_ENABLE}:</label><br /><span>{L_RANDOM_IMAGES_BLOCK_ENABLE_EXPLAIN}</span></dt>
+			<dd><input type="radio" class="radio" name="random_images_block_enable" value="1" <!-- IF RANDOM_IMAGES_BLOCK_ENABLE -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="random_images_block_enable" value="0" <!-- IF not RANDOM_IMAGES_BLOCK_ENABLE -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label for="max_random_images">{L_MAX_RANDOM_IMAGES}:</label><br /><span>{L_MAX_RANDOM_IMAGES_EXPLAIN}</span></dt>
+			<dd><input type="text" name="max_random_images" size="6" value="{MAX_RANDOM_IMAGES}" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="maximum_im_width">{L_MAXIMUM_IM_WIDTH}:</label><br /><span>{L_MAXIMUM_IM_WIDTH_EXPLAIN}</span></dt>
+			<dd><input type="text" name="maximum_im_width" size="6" value="{MAXIMUM_IM_WIDTH}" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="resize_im_after">{L_RESIZE_IM_AFTER}:</label><br /><span>{L_RESIZE_IM_AFTER_EXPLAIN}</span></dt>
+			<dd><input type="text" name="resize_im_after" size="6" value="{RESIZE_IM_AFTER}" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="rnd_number_chars">{L_RND_NUMBER_CHARS}:</label><br /><span>{L_RND_NUMBER_CHARS_EXPLAIN}</span></dt>
+			<dd><input type="text" name="rnd_number_chars" size="6" value="{RND_NUMBER_CHARS}" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="exclude_forum">{L_EXCLUDE_FORUM}:</label><br /><span>{L_EXCLUDE_FORUM_EXPLAIN}</span></dt>
+			<dd><select id="exclude_forum" name="exclude_forum[]" multiple="multiple">{S_EXCLUDE_FORUM}</select></dd>
+		</dl>
+		<p class="submit-buttons">
+			<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		</p>
+	{S_FORM_TOKEN}
+	</fieldset>
+</form>
+<!-- INCLUDE overall_footer.html -->

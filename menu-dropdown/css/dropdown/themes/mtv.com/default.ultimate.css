@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+/** 
+ * MTV.com Ultimate Linear CSS Drop-Down Menu Theme
+ *
+ * @file		default.ultimate.css
+ * @name		MTV.com
+ * @version		0.1
+ * @type		transitional
+ * @browsers	Windows: IE5+, Opera7+, Firefox1+
+ *				Mac OS: Safari2+, Firefox2+
+ *
+ * @link		http://www.lwis.net/
+ * @copyright	2008 Live Web Institute. All Rights Reserved.
+ *
+ */
+
+@import "default.css";
+
+
+/*------------------------------------------------------------------------------------------------------/
+ * @section		Base Style Extension
+ */
+
+ul.dropdown a,
+ul.dropdown span {
+ display: block;
+ padding: 5px 10px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------/
+ *	@section	Base Style Override
+ */
+
+
+ul.dropdown li {
+ padding: 0;
+}
+
+ul.dropdown ul a,
+ul.dropdown ul span { /* POI, proposal: override abstract a, span */
+ padding: 4px 8px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------/
+ * @section		Base Style Reinitiate: post-override activities
+ */
+
+
+ul.dropdown *.dir { /* POI */
+ padding: 5px 30px;
+}
+
+ul.dropdown ul *.dir {
+ padding: 4px 30px 4px 8px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------/
+ *	@section	Custom Styles
+ */
+
+
+ul.dropdown ul a {
+ width: 183px;
+}
+
+ul.dropdown ul a.dir {
+ width: 161px;
+}
+
+/*------------------------------------------------------------------------------------------------------/
+ *	@section	Header Custom Styles
+ */
+
+
+ul.dropdown *.head { /* POI */
+	font-weight:bold;
+	text-align:center;
+	padding:0px;
+	background-color:#F00;
+}
+
+ul.dropdown ul *.head {
+	font-weight:bold;
+	text-align:center;
+	padding:0px;
+	background-color:#F00;
+}
+
+
+/*------------------------------------------------------------------------------------------------------/
+ * @section		Support Class `open` Usage
+ * @source		js, artificial
+ *
+ */
+
+
+ul.dropdown *.open {
+ background-color: #0024ff;
+}
+ul.dropdown ul *.open {
+ background-color: #0024ff;
+ background-image: url(images/comnav-arrowover.png);
+ color: #e4ff00;
+}
+ul.dropdown ul ul *.open {
+ background-color: #0024ff;
+ background-image: url(images/comnav-arrowover2.png);
+ color: #e4ff00;
+}
+/* Override UPPER TWO definitions */
+ul.dropdown a.open:hover {
+ background-color: #4698ca;
+ color: #e4ff00;
+}
+ul.dropdown ul a.open:hover {
+ background-image: url(images/comnav-arrowon.png);
+ color: #e4ff00;
+}
+
+
+/* Clone in CSS 2 */
+
+ul.dropdown li:hover > *.dir {
+ background-color: #4698ca;
+}
+ul.dropdown ul li:hover > *.dir {
+ background-color: #4698ca;
+ background-image: url(images/comnav-arrowon.png);
+}
+ul.dropdown ul ul li:hover > *.dir {
+ background-color: #4698ca;
+ background-image: url(images/comnav-arrowon.png);
+ color: #e4ff00;
+}
+
+/* Override UPPER TWO definitions */
+ul.dropdown li:hover > a.dir:hover {
+ background-color: #4698ca;
+ color: #e4ff00;
+}
+ul.dropdown ul li:hover > a.dir:hover {
+ background-image: url(images/comnav-arrowon.png);
+ color: #e4ff00;
+}

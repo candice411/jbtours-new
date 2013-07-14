@@ -1,0 +1,19 @@
+To update from 0.0.1 to 1.0.1
+
+----
+Then, copy included files over older ones
+	* from="root/includes/functions_phototakenyou.php" to="includes/functions_phototakenyou.php
+	* from="root/language/en/mods/info_acp_attached_photo.php" to="language/en/mods/info_acp_attached_photo.php
+	* from="root/language/en/mods/attached_photo.php" to="language/en/mods/attached_photo.php
+	* from="root/language/en/mods/umil_attached_photo.php" to="language/en/mods/umil_attached_photo.php
+	* from="root/styles/prosilver/template/taken_photos_yty.html" to="styles/prosilver/template/taken_photos_yty.html
+	* from="root/install_taken_photos_byyou.php" to="install_taken_photos_byyou.php
+	* from="root/umil/*.*" to="umil/*.*
+
+	----	
+Then run update script
+
+root/update_taken_photos_byyou.php
+-----
+,
+

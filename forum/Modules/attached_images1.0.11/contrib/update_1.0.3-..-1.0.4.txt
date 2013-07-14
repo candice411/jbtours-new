@@ -1,0 +1,24 @@
+To update from 1.0.3 to 1.0.4
+
+----
+run root/install_taken_photos_byyou.php for version 1.0.4
+
+Then, copy included files over older ones
+	* from="root/includes/functions_phototakenyou.php" to="includes/functions_phototakenyou.php
+	* from="root/install_taken_photos_byyou.php" to="install_taken_photos_byyou.php
+
+	----	
+Then run install script file for uninstall before
+
+root/install_taken_photos_byyou.php
+
+Then run install script file for install before
+
+root/install_taken_photos_byyou.php
+
+
+Then goto ACP -> Board Configuration -> Post settings -> Posting
+
+-----
+,
+

@@ -1,0 +1,15 @@
+To update from 1.0.1 to 1.0.2
+
+----
+Then, copy included files over older ones
+	* from="root/includes/functions_phototakenyou.php" to="includes/functions_phototakenyou.php
+	* from="root/language/en/mods/info_acp_attached_photo.php" to="language/en/mods/info_acp_attached_photo.php
+	* from="root/install_taken_photos_byyou.php" to="install_taken_photos_byyou.php
+
+	----	
+Then run update script
+
+root/update_taken_photos_byyou.php
+-----
+,
+

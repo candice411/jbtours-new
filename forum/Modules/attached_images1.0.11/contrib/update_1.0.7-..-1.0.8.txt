@@ -1,0 +1,15 @@
+To update from 1.0.7 to 1.0.8
+
+----
+Then, replace,
+	* from="root/includes/functions_attached_images.php" to="includes/functions_attached_images.php
+	* from="root/includes/acp/info/acp_attached_images.php" to="includes/acp/info/acp_attached_images.php
+	* from="root/includes/acp/info/acp_random_images.php" to="includes/acp/info/acp_random_images.php
+	----	
+Then run update script
+
+root/update_attached_images.php
+-----
+,
+
+

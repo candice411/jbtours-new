@@ -1,0 +1,33 @@
+To update from 1.0.2 to 1.0.3
+
+----
+run root/install_taken_photos_byyou.php for version 1.0.2
+
+Then, copy included files over older ones
+	* from="root/includes/functions_phototakenyou.php" to="includes/functions_phototakenyou.php
+	* from="root/language/en/mods/info_acp_attached_photo.php" to="language/en/mods/info_acp_attached_photo.php
+	* from="root/language/en/mods/attached_photo.php" to="language/en/mods/attached_photo.php
+	* from="root/styles/prosilver/template/taken_photos_yty.html" to="styles/prosilver/template/taken_photos_yty.html
+	* from="root/styles/subsilver2/template/taken_photos_yty.html" to="styles/subsilver2/template/taken_photos_yty.html
+	* from="root/install_taken_photos_byyou.php" to="install_taken_photos_byyou.php
+
+Than open includes/acp/acp_board.php
+find:
+##########################################################################
+
+						'maximum_width_image'		=> array('lang' => 'MAXIMUM_WIDTH_IMAGE',		'validate' => 'int:0:2000',	'type' => 'text:3:4', 'explain' => true),
+##########################################################################
+add before:
+##########################################################################
+						'resize_after_this_pixel'	=> array('lang' => 'RESIZE_AFTER_THIS_PIXEL',	'validate' => 'int:0:2000',	'type' => 'text:4:5', 'explain' => true),
+##########################################################################
+	----	
+Then run install script file
+
+root/install_taken_photos_byyou.php
+
+Then goto ACP -> Board Configuration -> Post settings -> Posting
+
+-----
+,
+

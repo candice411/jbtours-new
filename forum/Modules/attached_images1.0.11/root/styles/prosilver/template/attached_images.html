@@ -1,0 +1,25 @@
+<!-- IF ATTACHED_IMAGES_BLOCK_ENABLE and S_DISPLAY_ATTACHMENTS -->
+<div class="forabg">
+	<div class="inner"><span class="corners-top"><span></span></span>
+		<table class="table1" cellspacing="1">
+		<thead>
+			<tr>
+				<th style="text-align:left;">{L_ATTACHED_IMAGES}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="bg2">
+				<!-- BEGIN attached_images -->
+				<td align="center" valign="top">
+					<a href="{attached_images.U_VIEW_TOPIC}">{attached_images.TOPICTITLE}</a><br />	
+					<a href="{attached_images.U_FILE_POSTE}"><span class="gensmall"><img src="{attached_images.ATTACH_IMAGE}" height="{attached_images.IM_HEIGHT}" width="{attached_images.IM_WIDTH}" alt="{attached_images.TOPICTITLE}"/></span></a><br />
+					<br />
+					{attached_images.POSTER_AVATAR}<br />{L_ATTACH_SENDER}<a href="{attached_images.U_POSTER}"></a>{attached_images.ATTACH_POSTER}<br />{L_VIEW_COUNT}({attached_images.VIEWS})<br />{L_REPLY_COUNT}({attached_images.REPLIES})<br />{L_POST_DATE}{attached_images.DATE}<br />&#187; <a href="{attached_images.U_LAST_POSTE}">{L_LAST_COMMENT}</a><br />
+				</td>
+				<!-- END attached_images --> 
+			</tr>
+		</tbody>
+		</table>	
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+<!-- ENDIF -->

@@ -1,0 +1,38 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_ATTACHED_IMAGES_BLOCK_CONFIG}</h1>
+<form id="acp_board" method="post" action="{U_ACTION}">
+	<fieldset>
+		<dl>
+			<dt><label for="attached_images_block_enable">{L_ATTACHED_IMAGES_BLOCK_ENABLE}:</label><br /><span>{L_ATTACHED_IMAGES_BLOCK_ENABLE_EXPLAIN}</span></dt>
+			<dd><input type="radio" class="radio" name="attached_images_block_enable" value="1" <!-- IF ATTACHED_IMAGES_BLOCK_ENABLE -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp; 
+				<input type="radio" class="radio" name="attached_images_block_enable" value="0" <!-- IF not ATTACHED_IMAGES_BLOCK_ENABLE -->checked="checked"<!-- ENDIF --> /> {L_NO}</dd>
+		</dl>
+		<dl>
+			<dt><label for="forum_ids_to_show">{L_FORUM_IDS_TO_SHOW}:</label><br /><span>{L_FORUM_IDS_TO_SHOW_EXPLAIN}</span></dt>
+			<dd><input type="text" name="forum_ids_to_show" size="8" value="{FORUM_IDS_TO_SHOW}" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="maximum_number_image">{L_MAXIMUM_NUMBER_IMAGE}:</label><br /><span>{L_MAXIMUM_NUMBER_IMAGE_EXPLAIN}</span></dt>
+			<dd><input type="text" name="maximum_number_image" size="6" value="{MAXIMUM_NUMBER_IMAGE}" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="maximum_width_image">{L_MAXIMUM_WIDTH_IMAGE}:</label><br /><span>{L_MAXIMUM_WIDTH_IMAGE_EXPLAIN}</span></dt>
+			<dd><input type="text" name="maximum_width_image" size="6" value="{MAXIMUM_WIDTH_IMAGE}" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="resize_after_this_pixel">{L_RESIZE_AFTER_THIS_PIXEL}:</label><br /><span>{L_RESIZE_AFTER_THIS_PIXEL_EXPLAIN}</span></dt>
+			<dd><input type="text" name="resize_after_this_pixel" size="6" value="{RESIZE_AFTER_THIS_PIXEL}" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="lst_number_chars">{L_LST_NUMBER_CHARS}:</label><br /><span>{L_LST_NUMBER_CHARS_EXPLAIN}</span></dt>
+			<dd><input type="text" name="lst_number_chars" size="6" value="{LST_NUMBER_CHARS}" /></dd>
+		</dl>
+		<p class="submit-buttons">
+			<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		</p>
+	{S_FORM_TOKEN}
+	</fieldset>
+</form>
+<!-- INCLUDE overall_footer.html -->

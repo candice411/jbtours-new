@@ -1,0 +1,133 @@
+<!--
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	font-size:12px;
+}
+.oneColFixCtrHdr #container-photo {
+	width: 900px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #DDDDDD;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColFixCtrHdr #header {
+	background:#DDDDDD;
+	height:106px;
+	padding: 0;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+}
+.oneColFixCtrHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.oneColFixCtrHdr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #DDDDDD;
+}
+.oneColFixCtrHdr #footer {
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#c0c0c0;
+	border-top:#000 4px solid;
+	font-size:12px;
+	clear: both;
+}
+.oneColFixCtrHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.oneColFixCtrHdr #main-menu {
+	margin:0;
+	top:0;
+}
+-->
+a {color:#36F;text-decoration:none;}
+a:hover {color:#09F;}
+.style1 {color: #FF0000;}
+#row {float:left;width:100%;}
+#images {float:left;padding:10px 0 10px 0;}
+.style2 {color: #0000FF;}
+.style3 {color:#990099;}
+.style4 {color: #FF0000; font-weight: bold; }
+.style5 {color:#FF0000; font-size:3em;}
+.style6 {color: #CC6600}
+.style11 {font-size: 2em;}
+.style13 {color: #333333}
+.style7 {color:#090;} /* Green */
+div.clearer {clear:both; line-height: 0; height: 0;}
+blockquote {font-family:Verdana, Arial, Helvetica, sans-serif;font-size:13px;}
+.sub-heading {border:thin #000 solid;padding:2px;background:#66CCFF;}
+.top-border {border:thick #000 double;padding:5px 5px 5px 5px;}
+
+/* Vic Falls */
+#price_cell1 {float:left; padding:5px; width:10%;font-weight:bold;}
+#price_cell2 {float:left; padding:5px; width:30%;font-weight:bold;}
+#price_cell3 {float:left; padding:5px; width:25%;font-weight:bold;}
+#cell1 {float:left;padding:5px;width:15%;height:100%;font-weight:bold;}
+#cell2 {float:left;padding:5px;width:75%;height:100%;}
+#program_cell1 {float:left;padding:5px;width:15%;height:100%;}
+#program_cell2 {float:left;padding:5px;width:75%;height:100%;}
+#blue_block {float:left;width:50px;height:20px;background:#66FFFF;}
+#brown_block {float:left;width:50px;height:20px;background:#660000;}
+#green_block {float:left;width:50px;height:20px;background:#00FF00;}
+#yellow_block {float:left;width:50px;height:20px;background:#FFFF00;}
+#greenline {background:#009933;height:6px;}
+.program_cell1 {float:left;padding:5px;width:15%;height:100%;}
+.program_cell2 {float:left;padding:5px;width:75%;height:100%;}
+.price_cell1 {float:left; padding:5px; width:10%;font-weight:bold;}
+.price_cell2 {float:left; padding:5px; width:25%;font-weight:bold;}
+.price_cell3 {float:left; padding:5px; width:25%;font-weight:bold;}
+/* End*/
+
+/* Rate & Dates */
+#rates_cell1 {float:left; padding:5px; width:169px;}
+#rates_cell2 {float:left; padding:5px; width:66px;}
+#rates_cell3 {float:left; padding:5px; width:301px;}
+#rates_cell4 {float:left; padding:5px; width:193px;}
+#rates_cell5 {float:left; padding:5px; width:65px;}
+.row-hover {width:860px;border:1px #333 solid;}
+.row {width:860px;border:1px #333 solid;}
+#row_head {float:left; width:860px;border:3px #333 solid;font-weight:bold;}
+div:hover.row-hover {background:#CCC;}
+.break {background:#000; height:20px; color:#ffffff;}
+/* END*/
+
+/* LINKS */
+#collom1 {float:left;width:35%;padding:5px 5px 5px 5px;}
+#collom2 {float:left;width:55%;padding:5px 5px 5px 5px;}
+
+/* LANDING PAGE */
+#menu {float:left;width:12%;font-family:Arial, Helvetica, sans-serif;font-weight:bold;color:#fff;}
+#menu a{text-decoration:none;color:#fff;}
+#menu a:hover{text-decoration:none;color:#fff;}
+.menu {padding:2px 2px 2px 2px;background:#0000FF;}
+#menu :hover.menu  {padding:2px 2px 2px 2px;background:#6699FF;}
+#main {float:left;padding:1% 1% 1% 1%;width:84%;}
+#logo {background:url(cozamarketing/top.png) no-repeat;width:692px;height:103px;margin:0;}
+
+#hs-buttons {
+	display: block;
+}
+#hs-buttons ul.buttons a {
+	text-decoration:none;
+	color:#FFFF00;
+}
+#hs-buttons ul.buttons li {
+	display:inline;
+	padding:5px 10px 5px 10px;
+	background:#0000FF;
+	border:thin solid #000;
+	color:#FFFF00;
+	font-weight:bold;
+}
+#hs-buttons ul.buttons li:hover {
+	display:inline;
+	padding:5px 10px 5px 10px;
+	background:#0099FF;
+	border:thin solid #000;
+	color:#FFFF00;
+	font-weight:bold;
+}

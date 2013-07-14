@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="./modx.prosilver.en.xsl"?>
+<!--For security purposes, please check: http
+://www.phpbb.com/mods/ for the latest version of this MOD. Although MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD. No support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.3.xsd">
+	<header>
+		<license>http://opensource.org/licenses/gpl-license.php GNU General Public License v2</license>
+		
+		<title lang="en">Attached Images Block</title>
+		<title lang="tr">Ekli Resimler Bloğu</title>
+
+		<description lang="en">Display latest attached images from specified forums with poster avatar and random images as blocks on index.</description>
+		<description lang="tr">Forum ana sayfada belirtilen forumlardan avatarlı son resimler ve rastgele resimleri bloklar şeklinde gösterir.</description>
+
+		<author-notes lang="en"></author-notes>
+		<author-notes lang="tr"></author-notes>
+		
+		<author-group>
+			<author>
+				<realname></realname>
+				<username>irdem</username>
+				<email>irdem@hotmmailmail.com</email>
+			</author>
+		</author-group>
+		
+		<mod-version>1.0.11</mod-version>
+		
+		<installation>
+			<level>easy</level>
+			<time>180</time>
+			<target-version>3.0.6</target-version>
+		</installation>
+
+		<history>
+			<entry>
+				<date>2010-02-20</date>
+				<rev-version>1.0.11</rev-version>
+				<changelog lang="en">
+					<change>Added a functionality for allow to define the number of caracteres for topic titles</change>
+					<change>Corrected some typos in template files for W3C validation</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>Konu başlıklarının karakter sayısını tanımlama özelliği eklendi</change>
+					<change>Tema dosyalarında W3C geçerliliği için bazı değişiklikler yapıldı</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2010-02-10</date>
+				<rev-version>1.0.10</rev-version>
+				<changelog lang="en">
+					<change>Solved error occurs for some mysql version about attachment auth system</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>Bazı mysql versiyonlarında eklenti izinleriyle ilgili çıkan hata giderildi</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2010-02-08</date>
+				<rev-version>1.0.9</rev-version>
+				<changelog lang="en">
+					<change>Solved debug error prior to running the UMIL install file</change>
+					<change>Purified template files form some codes unnecessary</change>
+					<change>Added more DIY explanations</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>Umil kurulum dosyası çalıştırılmadan önce ortaya çıkan Debug Hataları giderildi</change>
+					<change>Tema dosyaları bazı gereksiz kodlardan arındırıldı.</change>
+					<change>Daha fazla DIY açıklaması eklendi</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2010-01-29</date>
+				<rev-version>1.0.8</rev-version>
+				<changelog lang="en">
+					<change>Added no resize functionality if thumbnail function is activated and its size is smaller then resize after size</change>
+					<change>Added thumbnail resize functionality if thumbnail function is activated and its size is bigger then resize after size</change>
+					<change>Some changes in file function_attached_images.php</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>Küçük resim özelliği aktifleştirilmişse ve küçük resim boyutu, boyutlandırma alt sınırından küçükse resmi boyutlandırmama özelliği eklendi</change>
+					<change>Küçük resim özelliği aktifleştirilmişse ve küçük resim boyutu, boyutlandırma alt sınırından büyükse küçük resimden resmi boyutlandırmama özelliği eklendi</change>
+					<change>function_attached_images.php dasyasında bazı dosya ve kod değişiklikleri yapıldı</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2010-01-18</date>
+				<rev-version>1.0.7</rev-version>
+				<changelog lang="en">
+					<change>Added Random Image ACP Module</change>
+					<change>Added Random Image future</change>
+					<change>Some files and code changes</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>ACP Rastgele Resimler Modulü eklendi</change>
+					<change>Rastgele resimler özelliği eklendi</change>
+					<change>Bazı dosya ve kod değişiklikleri yapıldı</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2010-01-12</date>
+				<rev-version>1.0.6</rev-version>
+				<changelog lang="en">
+					<change>Added ACP Module</change>
+					<change>Removed frame height parameter</change>
+					<change>Mod name, files names and some code changes</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>ACP Modul eklendi</change>
+					<change>Frame height parametresi kaldırıldı</change>
+					<change>Mod adı, dosya isimleri ve bazı kod değişiklikleri yapıldı</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2009-12-19</date>
+				<rev-version>1.0.5</rev-version>
+				<changelog lang="en">
+					<change>Added image frame height configurable on ACP (if you want to add more photos with multi lines on block, this add you edit cosmetic problem)</change>
+					<change>Disable block issue, bug fixed</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>YKP den ayarlanabilir resim çrçeve yüksekliği eklendi (Blok üzerinde çok sayıda resmin gösterilemesini tercih ettiğinizde, görüntü bozulmasını engellemenize yardımcı olur)</change>
+					<change>YKP den forum pasif edildiğinde blok başlığının forumda görünme sorunu giderildi</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2009-12-10</date>
+				<rev-version>1.0.4</rev-version>
+				<changelog lang="en">
+					<change>A forum permission issue fixed</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>Bir forum izin problemi giderildi</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2009-12-09</date>
+				<rev-version>1.0.3</rev-version>
+				<changelog lang="en">
+					<change>Added view count</change>
+					<change>Added date of last comment</change>
+					<change>Added no resize ability until a size defined on acp</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>Görüntülenme sayısı eklendi</change>
+					<change>Son yorum tarihi eklendi</change>
+					<change>Belirli bir boyuta kadar resim boyutlandırmama özelliği eklendi</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2009-12-08</date>
+				<rev-version>1.0.2</rev-version>
+				<changelog lang="en">
+					<change>added multiple forum choice option. (exemple: 1,2,8)</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>Birden çok forum seçme seçeneği eklendi (Örnek: 1,2,8)</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2009-11-30</date>
+				<rev-version>1.0.1</rev-version>
+				<changelog lang="en">
+					<change>Added configurable image resize functionality on ACP</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>YKP den resim boyutlandırma fonksiyonu eklendi</change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2009-11-30</date>
+				<rev-version>0.0.1</rev-version>
+				<changelog lang="en">
+					<change>Initial release</change>
+				</changelog>
+				<changelog lang="tr">
+					<change>Başlangıç sürümü</change>
+				</changelog>
+			</entry>
+		</history> 	
+		<link-group>
+			<link type="template" href="./subsilver2.xml" lang="en">subsilver2</link>
+			<link type="template" href="./subsilver2.xml" lang="tr">subsilver2</link>		
+			<link type="language" href="./tr.xml" lang="en">Turkish</link>
+			<link type="language" href="./tr.xml" lang="tr">Türkçe</link>
+		</link-group>		
+	</header>	
+	<action-group>
+		<copy>	
+			<file from="root/includes/functions_attached_images.php" to="includes/functions_attached_images.php"></file>
+			<file from="root/includes/acp/acp_attached_images.php" to="includes/acp/acp_attached_images.php"></file>
+			<file from="root/includes/acp/acp_random_images.php" to="includes/acp/acp_random_images.php"></file>
+			<file from="root/includes/acp/info/acp_attached_images.php" to="includes/acp/info/acp_attached_images.php"></file>
+			<file from="root/includes/acp/info/acp_random_images.php" to="includes/acp/info/acp_random_images.php"></file>
+			<file from="root/language/en/mods/info_acp_attached_images.php" to="language/en/mods/info_acp_attached_images.php"></file>
+			<file from="root/language/en/mods/info_acp_attached_images.php" to="language/en/mods/info_acp_attached_images.php"></file>
+			<file from="root/language/en/mods/info_acp_random_images.php" to="language/en/mods/info_acp_random_images.php"></file>
+			<file from="root/language/en/mods/attached_images.php" to="language/en/mods/attached_images.php"></file>
+			<file from="root/language/en/mods/umil_attached_images.php" to="language/en/mods/umil_attached_images.php"></file>
+			<file from="root/language/en/mods/umil_attached_images.php" to="language/en/mods/umil_attached_images.php"></file>
+			<file from="root/styles/prosilver/template/attached_images.html" to="styles/prosilver/template/attached_images.html" />
+			<file from="root/styles/prosilver/template/random_images.html" to="styles/prosilver/template/random_images.html" />
+			<file from="root/adm/style/acp_attached_images.html" to="adm/style/acp_attached_images.html"></file>
+			<file from="root/adm/style/acp_random_images.html" to="adm/style/acp_random_images.html"></file>
+			<file from="root/install_attached_images.php" to="install_attached_images.php"></file>
+			<file from="root/umil/*.*" to="umil/*.*" />
+		</copy>
+		<open src="index.php">
+			<edit>
+				<find><![CDATA[   $user->setup('viewforum');]]></find>
+				<action type="after-add"><![CDATA[    //Begin: attached_images
+    if (isset($config['attached_images_block_enable']) && $config['attached_images_block_enable'] || isset($config['random_images_block_enable']) && $config['random_images_block_enable'])
+    {
+       include($phpbb_root_path . 'includes/functions_attached_images.' . $phpEx);
+       attached_images();
+       get_images();
+    }
+    // End: attached_images
+]]></action>
+			</edit>		
+		</open>
+		<open src="styles/prosilver/template/index_body.html">
+			<edit>
+				<find><![CDATA[<!-- INCLUDE overall_header.html -->]]></find>
+				<action type="after-add"><![CDATA[<!-- INCLUDE random_images.html -->]]></action>
+			</edit>				
+			<edit>
+				<find><![CDATA[<!-- INCLUDE forumlist_body.html -->]]></find>
+				<action type="after-add"><![CDATA[<!-- INCLUDE attached_images.html -->]]></action>
+			</edit>				
+		</open>
+		<diy-instructions lang="en">
+-- Execute and delete /install_attached_images.php;
+-- Enable and configure the mod:
+ACP -> .MODS -> Attached Images Block
+-- Purge cache;
+-- Refresh the template;		
+ </diy-instructions>		
+		<diy-instructions lang="tr">
+-- Tarayıcınızla /install_attached_images.php kurulum dosyasını çalıştırıp silin;
+-- Modu etkinleştirip ayarlayın:
+Yönetim Paneli -> .MODLAR -> Ekli Resimler bloğu
+-- Ön belleği temizleyin;
+-- Temanızı yenileyin;
+</diy-instructions>
+	</action-group>
+</mod>

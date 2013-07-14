@@ -1,0 +1,23 @@
+<!-- IF ATTACHED_IMAGES_BLOCK_ENABLE and S_DISPLAY_ATTACHMENTS -->
+<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<th class="cat_block">{L_ATTACHED_IMAGES}</th>
+	</tr>
+	<tr>
+		<td class="row2" align="center" valign="top">
+			<table cellspacing="5">
+				<tr>
+					<!-- BEGIN attached_images -->
+					<td class="row1" align="center" valign="top">
+						{L_PH_SUBJECT}<a href="{attached_images.U_VIEW_TOPIC}">{attached_images.TOPICTITLE}</a><br />	
+						<a href="{attached_images.U_FILE_POSTE}"><span class="gensmall"><img src="{attached_images.ATTACH_IMAGE}" height="{attached_images.IM_HEIGHT}" width="{attached_images.IM_WIDTH}" alt="{attached_images.TOPICTITLE}"/></span></a><br />
+						<br />
+						{attached_images.POSTER_AVATAR}<br />{L_ATTACH_SENDER}<a href="{attached_images.U_POSTER}"></a>{attached_images.ATTACH_POSTER}<br />{L_VIEW_COUNT}({attached_images.VIEWS})<br />{L_REPLY_COUNT}({attached_images.REPLIES})<br />{L_POST_DATE}{attached_images.DATE}<br />&#187; <a href="{attached_images.U_LAST_POSTE}">{L_LAST_COMMENT}</a><br />
+					</td>
+				<!-- END attached_images --> 
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- ENDIF -->

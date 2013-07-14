@@ -1,0 +1,23 @@
+<!-- IF RANDOM_IMAGES_BLOCK_ENABLE and S_DISPLAY_ATTACHMENT -->
+<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<th class="cat_block">{L_RANDOM_IMAGES}</th>
+	</tr>
+	<tr>
+		<td class="row2" align="center" valign="top">
+			<table class="tablebg" cellspacing="5">
+				<tr>
+					<!-- BEGIN random_images -->
+					<td class="row1" align="center" valign="top">
+						<a href="{random_images.U_FILE_POSTE}"><img src="{random_images.ATTACH_IMAGE}" height="{random_images.IM_HEIGHT}" width="{random_images.IM_WIDTH}" alt="{random_images.TOPICTITLE}"/></a>
+						<br />
+						<a href="{random_images.U_VIEW_TOPIC}">{random_images.TOPICTITLE}</a><br />	
+						{L_ATTACH_SENDER}{random_images.ATTACH_POSTER}
+					</td>
+					<!-- END random_images -->	
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- ENDIF -->
